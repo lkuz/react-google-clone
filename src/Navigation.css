@@ -1,0 +1,32 @@
+.nav-container {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 21px 10px 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav,
+.nav-left,
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.list-item-left {
+  font-size: 13px;
+  padding-left: 21px;
+}
+
+.list-item-right {
+  font-size: 13px;
+  padding-right: 21px;
+}
