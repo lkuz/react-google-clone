@@ -1,7 +1,7 @@
 import React from "react";
-import "../Navigation.css";
+import "../css/Navigation.css";
 
-const Navigation = () => (
+export const Navigation = () => (
   <div className="nav-container">
     <ul className="nav">
       <div className="nav-left">
@@ -38,5 +38,3 @@ const Navigation = () => (
     </ul>
   </div>
 );
-
-export default Navigation;

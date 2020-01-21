@@ -1,6 +1,7 @@
 import React from "react";
+import "../css/Logo.css";
 
-const Logo = () => (
+export const Logo = () => (
   <div className="logo-container">
     <img
       src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -8,5 +9,3 @@ const Logo = () => (
     />
   </div>
 );
-
-export default Logo;
