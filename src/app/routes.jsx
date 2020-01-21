@@ -1,5 +1,6 @@
 import React from "react";
 import { Search } from "../pages";
+import { Results } from "../pages";
 
 export const routes = [
   {
@@ -10,5 +11,9 @@ export const routes = [
   {
     href: "/test",
     component: () => <>Test</>
+  },
+  {
+    href: "/results",
+    component: Results
   }
 ];
