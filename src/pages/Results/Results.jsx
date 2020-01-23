@@ -1,6 +1,11 @@
 import React from "react";
-import { dummydata } from "../";
+import { ResultNavigation, FilteredResults } from "../";
 
-export const Results = () => (
-  <div className="results-wrapper">{dummydata.article1.title}</div>
-);
+export const Results = () => {
+  return (
+    <div className="results-wrapper">
+      <ResultNavigation />
+      <FilteredResults />
+    </div>
+  );
+};

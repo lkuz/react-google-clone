@@ -3,21 +3,26 @@ form {
   flex-direction: column;
 }
 
-input {
+.input-style {
   width: 487px;
   height: 34px;
   border: none;
 }
 
+input.input-style:focus {
+  outline: none;
+  font-size: 16px;
+}
+
 .magnifying-glass {
-  width: 15px;
-  height: 15px;
-  padding-right: 27px;
+  width: 22px;
+  height: 22px;
+  padding-right: 20px;
 }
 
 .microphone {
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
   /* padding: 12px 0 0 0px; */
   display: flex;
   align-content: flex-end;
@@ -25,7 +30,7 @@ input {
 
 .input-wrapper {
   width: 584px;
-  height: 40px;
+  height: 45px;
   border: 1px solid #dfe1e5;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -48,7 +53,8 @@ input {
   width: 50%;
 }
 
-button {
+input.google-search,
+input.on-luck {
   min-width: 101px;
   min-height: 36px;
   padding: 0 16px 0 16px;

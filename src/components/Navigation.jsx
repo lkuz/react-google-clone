@@ -8,11 +8,15 @@ export const Navigation = () => (
         {" "}
         <li className="list-item-left">
           {" "}
-          <a href="#">Über Google</a>
+          <a href="#" className="nav-link">
+            Über Google
+          </a>
         </li>
         <li className="list-item-left">
           {" "}
-          <a href="#">Store</a>{" "}
+          <a href="#" className="nav-link">
+            Store
+          </a>{" "}
         </li>
       </div>
 
@@ -20,19 +24,27 @@ export const Navigation = () => (
         {" "}
         <li className="list-item-right">
           {" "}
-          <a href="#">Gmail</a>{" "}
+          <a href="#" className="nav-link">
+            Gmail
+          </a>{" "}
         </li>
         <li className="list-item-right">
           {" "}
-          <a href="#">Bilder</a>{" "}
+          <a href="#" className="nav-link">
+            Bilder
+          </a>{" "}
         </li>
         <li className="list-item-right">
           {" "}
-          <a href="#">Menü</a>{" "}
+          <a href="#" className="nav-link">
+            Menü
+          </a>{" "}
         </li>
         <li className="list-item-right">
           {" "}
-          <a href="#">Profil</a>{" "}
+          <a href="#" className="nav-link">
+            Profil
+          </a>{" "}
         </li>
       </div>
     </ul>

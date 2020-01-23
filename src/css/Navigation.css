@@ -2,13 +2,13 @@
   margin: 0;
 }
 
-ul {
+ul.nav {
   list-style-type: none;
   margin: 0;
   padding: 21px 10px 0 0;
 }
 
-a {
+.nav-link {
   text-decoration: none;
   color: #000;
 }

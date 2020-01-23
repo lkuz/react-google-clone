@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import MagniGlassIcon from "../images/magnifying-glass.svg";
-import MicrophoneIcon from "../images/studio.svg";
+import React, { useState } from "react";
+import Lupe from "../images/lupe.svg";
+import MicrophoneIcon from "../images/googlemic_color_24dp.png";
 import { Link } from "react-router-dom";
 
 import "../css/Form.css";
@@ -12,30 +12,31 @@ export const Form = () => {
     setTerms(e.target.value);
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-
-    if (terms !== "") {
-      var formatted = terms.split(" ").join("+");
-      window.location = "http://www.google.com/search?q=" + formatted;
-    }
-  };
-
   return (
     <div className="form-container">
-      <form className="form-container" onSubmit={handleSubmit}>
+      <form className="form-container">
         <div className="input-wrapper">
-          <img src={MagniGlassIcon} alt="Suchen" className="magnifying-glass" />
-          <input type="text" value={terms} onChange={e => handleChange(e)} />
+          <img src={Lupe} alt="Suchen" className="magnifying-glass" />
+          <input
+            className="input-style"
+            type="text"
+            value={terms}
+            onChange={e => handleChange(e)}
+          />
           <img
             src={MicrophoneIcon}
             alt="Sprachaufnahme"
             className="microphone"
-          ></img>
+          />
         </div>
         <div className="button-container">
-          <input className="google-search" type="submit" value="Google Suche" />
-
+          <Link to="/results">
+            <input
+              className="google-search"
+              type="submit"
+              value="Google Suche"
+            />
+          </Link>
           <Link to="/test">
             <input type="button" className="on-luck" value="Auf gut Glück!" />
           </Link>
@@ -44,3 +45,14 @@ export const Form = () => {
     </div>
   );
 };
+
+// handleSubmit method to parse the input value as query param (onSubmit property of the submit google-search button/input)
+
+// const handleSubmit = e => {
+//   e.preventDefault();
+
+//   if (terms !== "") {
+//     var formatted = terms.split(" ").join("+");
+//     window.location = "http://www.google.com/search?q=" + formatted;
+//   }
+// }; onSubmit={handleSubmit}

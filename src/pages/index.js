@@ -5,6 +5,8 @@ export { Navigation } from "../components/Navigation";
 export { Test } from "../components/Test";
 export { Article } from "../components/Article";
 export { dummydata } from "../components/dummydata";
+export { ResultNavigation } from "../components/ResultNavigation";
+export { FilteredResults } from "../components/FilteredResults";
 
 export { Results } from "./Results/Results";
 export { Search } from "./Search/Search";

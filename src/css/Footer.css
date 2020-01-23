@@ -52,8 +52,10 @@ a {
 
 .left-footer-link {
   padding-left: 27px;
+  text-decoration: none;
 }
 
 .right-footer-link {
   padding-right: 27px;
+  text-decoration: none;
 }
